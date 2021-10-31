@@ -36,4 +36,4 @@ Tomcat started on port(s): 8080 (http) with context path '/meshter'
     ***
     ```
 
-Enjoy :smile:!
+Enjoy :slightly_smiling_face:!
