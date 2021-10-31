@@ -1,0 +1,6 @@
+server:  servlet:    context-path: /meshter# logging section      
+logging:
+  pattern:
+    console: "%date{MM/dd/yyyy HH:mm:ss.SSS} [%-5level] %logger - %message%n"
+  level:
+    '[com.github.meshter]': TRACE
