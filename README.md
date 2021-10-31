@@ -7,10 +7,10 @@ As a matter of fact, this utility has been originally designed to troubleshoot t
 # User's Guide
 To use this tool, follow these simple steps:
 1. Make sure you have a Java JRE 11+ version available on your system.
-2. Download the utility from [xxx](xxx).
+2. Download the utility from [the releases page](https://github.com/TomsTools/headers-reader/releases/download/2.5.5/headers-reader-2.5.5.jar).
 3. The tool gets started with the following command (it will start a web server listening on port 8080):
 ```bash
-$ java -jar headers-reader-2.5.5-SNAPSHOT.jar
+$ java -jar headers-reader-2.5.5.jar
 ```
 4. Once the tool starts, you will see a set of logs and one indication of the tool running successfully is this log snippet:
 ```
