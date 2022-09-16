@@ -5,9 +5,7 @@ import java.io.PrintWriter;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
-
 import javax.servlet.http.HttpServletRequest;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,6 +21,9 @@ public class HeadersController {
     Map<String, String> result = new HashMap<>();
     ByteArrayOutputStream baos = new ByteArrayOutputStream();
     try (PrintWriter pw = new PrintWriter(baos)) {
+      pw.println(
+          "Incoming request on interface " + request.getLocalAddr() + ":" + request.getLocalPort());
+      pw.println("Client IP is: " + request.getRemoteAddr());
       pw.println("Headers are:");
       pw.println("***");
       headers.asIterator().forEachRemaining(header -> {
